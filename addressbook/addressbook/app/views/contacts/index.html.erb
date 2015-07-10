@@ -1,0 +1,12 @@
+
+<p>Hello world!</p>
+
+		<ul>
+			<% @contacts.each do |x| %>
+				<li>
+					<%= link_to x.name, contact_path(x)  %>
+				</li>
+			<% end %>
+		</ul>  
+
+	<%= link_to "NEW CONTACT", new_contact_path  %>

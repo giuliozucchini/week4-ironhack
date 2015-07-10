@@ -1,0 +1,34 @@
+
+<h2>New Contact</h2>
+
+<%= form_for(@contact) do |field| %>
+
+    <div>
+        <%= field.label :name %>
+        <br>
+        <%= field.text_field :name %>
+    </div>
+
+      <div>
+        <%= field.label :phone %>
+        <br>
+        <%= field.text_field :phone %>
+    </div>
+
+      <div>
+        <%= field.label :address %>
+        <br>
+        <%= field.text_field :address %>
+    </div>
+
+    <div>
+        <%= field.label :email %>
+        <br>
+        <%= field.text_field :email %>
+    </div>
+
+    <div>
+        <%= field.submit %>
+    </div>
+
+<% end %>

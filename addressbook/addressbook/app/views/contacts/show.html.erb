@@ -1,0 +1,20 @@
+		<p>Name:
+			<%= @contact.name %>	
+		</p>  
+		
+		<p>Email:  
+			<%= @contact.email %>	
+		</p>  
+
+		<p>Phone:  
+			<%= @contact.phone %>	
+		</p>  
+
+		<p>Address:  
+			<%= @contact.address %>	
+		</p>  
+
+		<%= link_to "DESTROY", contact_path(@contact), method: "Delete"  %>
+		<%= link_to "NEW CONTACT", new_contact_path  %>
+		<%= link_to "BACK TO THE LIST", contacts_path  %>
+		
